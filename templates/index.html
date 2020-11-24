@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center><h1>Thyriod prediction</h1></center>
+	<hr><hr>
+
+	<div>
+	<form action="/predict" , method="POST">
+		
+		<center><h3> Enter TT4 test Measure<center><input type="text" name="TT4" placeholder="Between 0-200 , eg.110"></h3></center></center>
+		<center><p>TT4 is a test performed to measure "Thyroxine" in blood</p></center>
+		<br>
+
+		<center><h3> Enter FTI test Measure<center><input type="text" name="FTI" placeholder="Between 0-200 , eg.110"></h3></center></center>
+		<center><p>The FTI is obtained by multiplying the (Total T4) times (T3 Uptake) to obtain an index. The FTI is considered a more reliable indicator of thyroid</p></center>
+		<br>
+
+		<center><h3> Enter Gender<center><input type="text" name="sex" placeholder="0 OR 1"></h3></center></center>
+		<center><p>0 = Female : 1 = Male</p></center>
+		<br>
+
+		<center><h3> Enter thyroxine<center><input type="text" name="on_thyroxine" placeholder="0 OR 1"></h3></center></center>
+		<br>
+
+		<center><h3> Enter T3 test Measure<center><input type="text" name="T3" placeholder="Between 0-8 , eg.2.5"></h3></center></center>
+		<center><p>Triiodothyronine, also known as T3, is a thyroid hormone.</p></center>
+		<br>
+
+		<center><h3>hyperthyroid<center><input type="text" name="query_hyperthyroid" placeholder="0=Not Present , 1=Present , eg.0"></h3></center></center>
+		<br>
+
+		<center><h3>Psych symptom<center><input type="text" name="psych" placeholder="0=Not Present , 1=Present , eg.0"></h3></center></center>
+		<br>
+
+		<center><h3>Sick<center><input type="text" name="sick" placeholder="0=Not sick , 1=Sick , eg.0"></h3></center></center>
+		<br>
+
+		<center><h3>Tumor<center><input type="text" name="tumor" placeholder="0=Not Present , 1=Present , eg.0"></h3></center></center>
+		<br>
+
+		<center><h3>Pregnant<center><input type="text" name="pregnant" placeholder="0=Not pregnant , 1=pregnant , eg.0"></h3></center></center>
+		<br>
+
+		<center><h1><button type="submit">Predict</button></h1></center>
+
+		
+</body>
+</html>
