@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Thyriod Prediction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form action="/predict", method="POST" class="contact3-form validate-form">
+					<span class="contact3-form-title">
+						Thyriod Prediction
+					</span>
+
+					<!--===============================TT4====================================================-->
+
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="TT4" placeholder="Thyroxine Level">
+						<span class="focus-input3"></span>
+					</div>
+					<!--=============================FTI====================================================-->
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="FTI" placeholder="FTI Test">
+						<span class="focus-input3"></span>
+					</div>
+					<!--=============================sex============================================-->
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="none" placeholder="Gender">
+						<span class="focus-input3"></span>
+					</div>
+					<div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-42">
+							<input class="input-radio3" id="radio1" type="radio" name="sex" value="Male" checked="checked">
+							<label class="label-radio3" for="radio1">
+								Male
+							</label>
+						</div>
+
+						<div class="contact3-form-radio">
+							<input class="input-radio3" id="radio2" type="radio" name="sex" value="Female">
+							<label class="label-radio3" for="radio2">
+								Female
+							</label>
+						</div>
+					</div>
+					<!--=============================on_thyroxine=============================================-->
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="none" placeholder="Thyroxine Present?">
+						<span class="focus-input3"></span>
+					</div>
+					<div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-42">
+							<input class="input-radio3" id="radio3" type="radio" name="on_thyroxine" value="Yes" checked="checked">
+							<label class="label-radio3" for="radio3">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact3-form-radio">
+							<input class="input-radio3" id="radio4" type="radio" name="on_thyroxine" value="No">
+							<label class="label-radio3" for="radio4">
+								No
+							</label>
+						</div>
+					</div>
+					<!--=============================T3=============================================-->
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="T3" placeholder="Triodothyronine Level">
+						<span class="focus-input3"></span>
+					</div>
+					<!--=============================query_hyperthyroid===================================-->
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="none" placeholder="Hyperthyroid Present?">
+						<span class="focus-input3"></span>
+					</div>
+					<div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-42">
+							<input class="input-radio3" id="radio15" type="radio" name="query_hyperthyroid" value="Yes" checked="checked">
+							<label class="label-radio3" for="radio15">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact3-form-radio">
+							<input class="input-radio3" id="radio16" type="radio" name="query_hyperthyroid" value="No">
+							<label class="label-radio3" for="radio16">
+								No
+							</label>
+						</div>
+					</div>
+					<!--=============================psych========================================-->
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="none" placeholder="PSYCH Symptom Present?">
+						<span class="focus-input3"></span>
+					</div>
+					<div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-42">
+							<input class="input-radio3" id="radio5" type="radio" name="psych" value="Yes" checked="checked">
+							<label class="label-radio3" for="radio5">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact3-form-radio">
+							<input class="input-radio3" id="radio6" type="radio" name="psych" value="No">
+							<label class="label-radio3" for="radio6">
+								No
+							</label>
+						</div>
+					</div>
+					<!--===========================================sick=======================================-->
+
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="none" placeholder="SICK ?">
+						<span class="focus-input3"></span>
+					</div>
+					<div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-42">
+							<input class="input-radio3" id="radio7" type="radio" name="sick" value="Yes" checked="checked">
+							<label class="label-radio3" for="radio7">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact3-form-radio">
+							<input class="input-radio3" id="radio8" type="radio" name="sick" value="No">
+							<label class="label-radio3" for="radio8">
+								No
+							</label>
+						</div>
+					</div>
+					<!--======================================tumor==========================================-->
+
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="none" placeholder="TUMOR Present?">
+						<span class="focus-input3"></span>
+					</div>
+					<div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-42">
+							<input class="input-radio3" id="radio9" type="radio" name="tumor" value="Yes" checked="checked">
+							<label class="label-radio3" for="radio9">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact3-form-radio">
+							<input class="input-radio3" id="radio10" type="radio" name="tumor" value="No">
+							<label class="label-radio3" for="radio10">
+								No
+							</label>
+						</div>
+					</div>
+					<!--===================================pregnant============================================-->
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="none" placeholder="Pregnant ?">
+						<span class="focus-input3"></span>
+					</div>
+					<div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-42">
+							<input class="input-radio3" id="radio11" type="radio" name="pregnant" value="Yes" checked="checked">
+							<label class="label-radio3" for="radio11">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact3-form-radio">
+							<input class="input-radio3" id="radio12" type="radio" name="pregnant" value="No">
+							<label class="label-radio3" for="radio12">
+								No
+							</label>
+						</div>
+					</div>
+					<!--==================================================================================-->
+					
+					<div class="container-contact3-form-btn">
+						<button class="contact3-form-btn">
+							Predict
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

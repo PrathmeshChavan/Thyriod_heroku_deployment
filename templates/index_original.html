@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center><h1>Mobile Price Prediction</h1></center>
+	<hr>
+	<hr>
+	<div>
+	<form action="/predict" , method="POST">
+		
+		<center><h1>Enter RAM : </h1></center>
+		<center><h1><input type="text" name="ram" , placeholder="Between 300-4000 ,eg.2000"></h1></center>
+		<center><h3>RAM is in MB unit.&nbsp;&nbsp; 1GB RAM = 1000 MB</h3></center><br>
+
+		<center><h1>Enter Battery Capacity : </h1></center>
+		<center><h1><input type="text" name="battery_power" , placeholder="Between 500-2000 ,eg.1200"></h1></center>
+		<center><h3>Battery Capacity is in MAH unit</h3></center><br>
+
+		<center><h1>Enter Internal Memory : </h1></center>
+		<center><h1><input type="text" name="int_memory" , placeholder="Between 2GB - 64GB ,eg.16"></h1></center>
+		<center><h3>Internal memory is in GB unit</h3></center><br>
+
+		<center><h1>Enter Mobile Weight</h1></center>
+		<center><h1><input type="text" name="mob_weight" , placeholder="Between 80 - 200 ,eg.80"></h1></center>
+		<center><h3>Mobile weight is in Grams</h3></center><br>
+
+		<center><h1>Enter Pixel Height</h1></center>
+		<center><h1><input type="text" name="px_height" , placeholder="Between 100 - 2000 ,eg.800"></h1></center>
+		<center><h3>Mobile Height is in Pixel</h3></center><br>
+
+		<center><h1>Enter Pixel Width</h1></center>
+		<center><h1><input type="text" name="px_width" , placeholder="Between 500-2000 ,eg.1200"></h1></center>
+		<center><h3>Mobile Width is in Pixel</h3></center><br>
+
+
+		<center><button type="submit">Predict</button></center>
+
+	</div>
+
+	</form>
+</body>
+</html>
